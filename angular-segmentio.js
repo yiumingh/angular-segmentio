@@ -24,7 +24,7 @@ angular.module('segmentio', ['ng'])
 
             // Loop through analytics.js' methods and generate a wrapper method for each.
             var methods = ['identify', 'track', 'trackLink', 'trackForm', 'trackClick',
-                'trackSubmit', 'page', 'pageview', 'ab', 'alias', 'ready', 'group'
+                'trackSubmit', 'page', 'pageview', 'ab', 'alias', 'ready', 'group', 'reset'
             ];
             for (var i = 0; i < methods.length; i++) {
                 service[methods[i]] = methodFactory(methods[i]);
